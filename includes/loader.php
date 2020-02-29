@@ -72,7 +72,7 @@ class WpAngularAppLoader {
     public function ajax_handler(){
         $appName = $_POST['name'];
         $conf = $_POST['conf'];
-        echo do_shortcode( "[$appName conf='" . json_encode( WebMapp_getWizardConfiguration($conf) ) . "']" );
+        echo do_shortcode( "[$appName conf='$conf']" );
         die();
     }
 
@@ -105,6 +105,9 @@ class WpAngularAppLoader {
                     //$i++;
                 }
                    
+                $conf = $atts['conf'];
+                $confArr = WebMapp_getWizardConfiguration($conf);
+                $confJson = json_encode( array( 'conf' => json_encode( $confArr ) ) );
                 ob_start();
                 ?>
                 <script type="text/javascript">
@@ -116,7 +119,7 @@ class WpAngularAppLoader {
 
                 })(jQuery)   
                 </script>
-                <app-root data-conf='<?php echo json_encode($atts)?>' data-appName="<?php echo $name ?>"></app-root>
+                <app-root data-conf='<?php echo $confJson?>' data-appName="<?php echo $name ?>"></app-root>
                 <?php
                 $tmp = $this->apps[$name]['jss'];
                 foreach ( array_reverse($tmp) as $js )
