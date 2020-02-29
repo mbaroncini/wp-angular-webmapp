@@ -1,0 +1,73 @@
+{
+  "route": {
+    "wizardTitle": "",
+    "main": {
+      "stepLabel": "Dati principali",
+      "nameLabel": "Inserisci il nome della route",
+      "namePlaceholder": "nome",
+      "activityLabel": "Seleziona le activity per la route",
+      "activityPlaceholder": "activity",
+      "tourOperatorLabel": "Seleziona i tour operator",
+      "tourOperatorPlaceholder": "tour operator",
+      "pdfLabel": "Seleziona un file pdf"
+    },
+    "descriptions": {
+      "stepLabel": "Descrizione",
+      "excerptLabel": "Inserisci l'excerpt della route",
+      "excerptPlaceholder": "excerpt",
+      "descriptionLabel": "Inserisci la descrizione della route",
+      "descriptionPlaceholder": "Descrizione della route",
+      "imageLabel": "Seleziona l'immagine in evidenza"
+    },
+    "taxonomies": {
+      "stepLabel": "Categorie",
+      "whereLabel": "Inserisci il luogo della route",
+      "wherePlaceholder": "dove",
+      "whoLabel": "Inserisci chi è il target della route della route",
+      "whoPlaceholder": "target",
+      "shapeLabel": "Seleziona la tipologia di percorso della route",
+      "shapePlaceholder": "percorso",
+      "difficultyLabel": "Difficoltà"
+    },
+    "technicalData": {
+      "stepLabel": "Dati tecnici",
+      "stagesLabel": "Inserisci il numero di tappe",
+      "stagesPlaceholder": "tappe",
+      "distanceLabel": "Inserisci la lunghezza in km",
+      "distancePlaceholder": "lunghezza"
+    },
+    "gallery": {
+      "stepLabel": "Galleria",
+      "galleryLabel": "Seleziona la galleria fotografica"
+    }
+  },
+  "buttons": {
+    "back": "Indietro",
+    "next": "Continua",
+    "save": "Salva",
+    "ok": "ok",
+    "cancel": "Annulla"
+  },
+  "form": {
+    "errors": {
+      "requiredField": "Campo obbligatorio"
+    },
+    "fields": {
+      "files": {
+        "uploadPlaceholder": "Carica dal dispositivo",
+        "savePlaceholder": "Applica"
+      }
+    }
+  },
+  "alert": {
+    "route": {
+      "savedTitle": "Route salvata con successo",
+      "savedMessage": "La route è stata salvata con successo. È possibile editarla a questo link: {{editUrl}}",
+      "noIdTitle": "Attenzione",
+      "noIdMessage": "La route sembra sia stata salvata con successo ma l'api non ha i dettagli della route salvata. Controlla la console per verificare la risposta",
+      "warningTitle": "Attenzione",
+      "errorMessage": "Si è verificato un errore al momento del salvataggio. Controlla la console per ulteriori informazioni",
+      "cancelMessage": "Uscendo tutte le modifiche fatte saranno perse. Vuoi uscire?"
+    }
+  }
+}
