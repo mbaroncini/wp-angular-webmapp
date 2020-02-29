@@ -116,7 +116,7 @@ class WpAngularAppLoader {
 
                 })(jQuery)   
                 </script>
-                <app-root data-conf="<?php echo esc_attr(json_encode($atts))?>" data-appName="<?php echo $name ?>"></app-root>
+                <app-root data-conf='<?php echo json_encode($atts)?>' data-appName="<?php echo $name ?>"></app-root>
                 <?php
                 $tmp = $this->apps[$name]['jss'];
                 foreach ( array_reverse($tmp) as $js )
