@@ -72,7 +72,7 @@ class WpAngularAppLoader {
     public function ajax_handler(){
         $appName = $_POST['name'];
         $conf = $_POST['conf'];
-        echo do_shortcode( "[$appName conf='$conf']" );
+        echo do_shortcode( "[$appName conf='" . json_encode( WebMapp_getWizardConfiguration($conf) ) . "']" );
         die();
     }
 
