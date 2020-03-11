@@ -46,7 +46,10 @@
     "next": "Continua",
     "save": "Salva",
     "ok": "ok",
-    "cancel": "Annulla"
+    "cancel": "Annulla",
+    "preview": "Vedi online",
+    "edit": "Modifica",
+    "close": "Chiudi"
   },
   "form": {
     "errors": {
@@ -55,19 +58,29 @@
     "fields": {
       "files": {
         "uploadPlaceholder": "Carica dal dispositivo",
-        "savePlaceholder": "Applica"
+        "savePlaceholder": "Applica",
+        "loadingMorePlaceholder": "Caricamento in corso..."
       }
     }
   },
   "alert": {
     "route": {
-      "savedTitle": "Route salvata con successo",
-      "savedMessage": "La route è stata salvata con successo. È possibile editarla a questo link: {{editUrl}}",
+      "savingMessage": "Invio dei dati al server: ad operazione conclusa potrai vedere un preview della route e effettuare le eventuali modifiche",
+      "savedTitle": "Route Salvata",
+      "savedMessage": "I dati della route sono stati inviati e salvati correttamente sul server. Cosa vuoi fare?",
       "noIdTitle": "Attenzione",
       "noIdMessage": "La route sembra sia stata salvata con successo ma l'api non ha i dettagli della route salvata. Controlla la console per verificare la risposta",
       "warningTitle": "Attenzione",
       "errorMessage": "Si è verificato un errore al momento del salvataggio. Controlla la console per ulteriori informazioni",
       "cancelMessage": "Uscendo tutte le modifiche fatte saranno perse. Vuoi uscire?"
+    }
+  },
+  "wizards": {
+    "routeWizard": {
+      "openerButtonPlaceholder": "Nuova route"
+    },
+    "singleFieldRouteWizard": {
+      "openerButtonPlaceholder": "Nuova route TF"
     }
   }
 }
